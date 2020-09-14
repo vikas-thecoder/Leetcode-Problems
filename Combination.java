@@ -1,7 +1,7 @@
 /*
  Letter Combinations of a Phone Number
 */
-class Solution {
+class Combination {
     List<String> res = new ArrayList<>();
     
     char[][] map = new char[8][];
