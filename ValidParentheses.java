@@ -35,7 +35,7 @@ Constraints:
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
 */
-class Solution {
+class ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> temp = new Stack<>();
         Map<Character,Character> set = Map.of('{','}','[',']','(',')');
