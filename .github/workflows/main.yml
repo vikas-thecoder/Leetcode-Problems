@@ -1,0 +1,15 @@
+name: build
+on: 
+  workflow_dispatch:
+    inputs:
+      env:
+       type: string
+       required : true
+       default: prod
+env:
+  temp: ${{ inputs.env == 'prod' && 'p' || inputs.env == 'dev' && 'd' || 'q' }} 
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo $temp 
